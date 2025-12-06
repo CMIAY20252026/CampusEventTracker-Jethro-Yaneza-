@@ -3,15 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { EventTrackerComponent } from './event-tracker/event-tracker.component';
 
 @NgModule({
+  declarations: [
+    AppComponent,
+    EventTrackerComponent
+  ],
   imports: [
     BrowserModule,
     FormsModule
   ],
-  declarations: [
-    AppComponent
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

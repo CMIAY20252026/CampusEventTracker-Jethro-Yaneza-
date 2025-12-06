@@ -1,12 +1,10 @@
-import { Component, VERSION } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: `
-    <h1>{{ name }}</h1>
-    <p>Start editing to see some magic happen. :)</p>
-  `
+  template: '<app-event-tracker></app-event-tracker>',
+  styles: []
 })
 export class AppComponent {
-  name = `Angular ${VERSION.major}`;
+  title = 'Campus Event Tracker';
 }

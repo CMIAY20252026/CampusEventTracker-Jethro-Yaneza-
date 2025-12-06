@@ -1,0 +1,195 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+.header {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 2.5em;
+}
+
+.subtitle {
+  color: #666;
+  margin: 0;
+  font-size: 1.1em;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #333;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: 600;
+  font-size: 0.95em;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: #667eea;
+  color: white;
+  width: 100%;
+}
+
+.btn-primary:hover {
+  background: #5568d3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.btn-delete {
+  background: #ff4757;
+  color: white;
+  padding: 8px 16px;
+  font-size: 20px;
+}
+
+.btn-delete:hover {
+  background: #ee5a6f;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #999;
+}
+
+.empty-state p:first-child {
+  font-size: 1.5em;
+  margin: 0 0 10px 0;
+}
+
+.empty-subtitle {
+  font-size: 0.95em;
+  margin: 0;
+}
+
+.events-list {
+  margin-top: 20px;
+}
+
+.event-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #f8f9fa;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.event-item:hover {
+  border-color: #667eea;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.2);
+  transform: translateX(5px);
+}
+
+.event-content {
+  flex: 1;
+}
+
+.event-content h3 {
+  margin: 0 0 8px 0;
+  color: #333;
+  font-size: 1.3em;
+}
+
+.event-date {
+  margin: 5px 0;
+  color: #666;
+  font-size: 0.95em;
+}
+
+.event-id {
+  margin: 5px 0 0 0;
+  color: #999;
+  font-size: 0.85em;
+}
+
+.event-summary {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 2px solid #e9ecef;
+  text-align: center;
+}
+
+.event-summary p {
+  color: #666;
+  font-size: 1em;
+}
+
+.event-summary strong {
+  color: #667eea;
+  font-size: 1.2em;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: white;
+  margin-top: 20px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9em;
+  opacity: 0.9;
+}

@@ -1,0 +1,72 @@
+<div class="container">
+  <div class="header">
+    <h1>Campus Event Tracker</h1>
+    <p class="subtitle">Manage and track upcoming campus events</p>
+  </div>
+
+  <div class="card">
+    <h2>Add New Event</h2>
+    
+    <div class="form-group">
+      <label for="eventTitle">Event Title</label>
+      <input 
+        type="text" 
+        id="eventTitle"
+        [(ngModel)]="newTitle"
+        placeholder="Enter event title"
+        class="form-control"
+      >
+    </div>
+
+    <div class="form-group">
+      <label for="eventDate">Event Date</label>
+      <input 
+        type="date" 
+        id="eventDate"
+        [(ngModel)]="newDate"
+        class="form-control"
+      >
+    </div>
+
+    <button 
+      (click)="addEvent()" 
+      class="btn btn-primary"
+    >
+      + Add Event
+    </button>
+  </div>
+
+  <div class="card">
+    <h2>Upcoming Events</h2>
+    
+    <div *ngIf="events.length === 0" class="empty-state">
+      <p>No events saved.</p>
+      <p class="empty-subtitle">Add your first event using the form above.</p>
+    </div>
+
+    <div *ngIf="events.length > 0" class="events-list">
+      <div 
+        *ngFor="let event of events" 
+        class="event-item"
+      >
+        <div class="event-content">
+          <h3>{{ event.title }}</h3>
+          <p class="event-date"> {{ formatDate(event.date) }}</p>
+          <p class="event-id">ID: {{ event.id }}</p>
+        </div>
+        <button 
+          (click)="deleteEvent(event.id)" 
+          class="btn btn-delete"
+          title="Delete event"
+        >
+          🗑️
+        </button>
+      </div>
+
+      <div class="event-summary">
+        <p>Total Events: <strong>{{ events.length }}</strong></p>
+      </div>
+    </div>
+  </div>
+
+</div>
